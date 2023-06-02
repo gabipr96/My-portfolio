@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 jun 2023, 0:24:30
+    Author     : gabrielpr
+*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 20px;
+  background-color: grey;
+}
+
+header .navbar-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+header .navbar-logo img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+
+header .navbar{
+    float: left;
+}
+
+header .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li{
+    float: left;
+    font-family: arial;
+    font-size: 20px;
+    
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover{
+    color: white;
+}
+
+/*header .navbar ul li:hover{
+    background: lightgray;
+    color: white;
+}*/
+
+body{
+    background-image: url("Background/vecteezy_abstract-modern-polygon-background-white-and-grey-geometric_5429549.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
