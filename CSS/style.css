@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.wrapper{
+.wrapper,
+.projects {
     width: 100vw;
-    height: 30vw;
+    height: 60vw;
     background-color: #5D576B;
     color:white;
 }
@@ -72,7 +74,8 @@ span{
     color: #d7bce8;
 }
 
-.button{
+.button,
+.project-details{
     padding: 10px 20px;
     background-color: #d7bce8;
     border: none;
@@ -82,14 +85,17 @@ span{
     
 }
 
-.button:hover{
-    background-color: white;
+.button,
+.project-details:hover{
+    background-color: #8884ff;
+    transition: ease .4s;
 }
 
 .main img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
     margin: 0px 0px 0px 50px;
+    border: 7px solid #d7bce8;
 }
 
 .about{
@@ -124,4 +130,108 @@ span{
 
 .about p{
     margin-bottom: 1em;
+}
+
+.projects-headings{
+    width: 100vw;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    padding: 5em;
+    padding-bottom: 2em;
+}
+
+.projects-headings h2{
+    font-size: 2.5em;
+}
+
+.projects .container{
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    margin: 1em;
+    
+}
+
+.card_img{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/albrecht-1.png);
+    background-size: cover;
+}
+
+.card_title{
+    padding: 20px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.project-links i{
+    font-size: 1.5em;
+}
+
+.card .project-details{
+    margin: 0 auto;
+    margin: 1em;
+}
+
+.card .project-details a{
+    text-decoration: none;
+    color: black;
+}
+
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: #d7bce8;
+}
+
+.footer-content h2{
+    font-size: 0.9em;
+}
+
+.footer-content h5{
+    font-size: 0.7em;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    margin-top: 0.5em;
+}
+
+.footer .social i{
+    font-size: 1.2em;
+}
+
+.footer .social a{
+    text-decoration: none;
+    color: black;
 }
