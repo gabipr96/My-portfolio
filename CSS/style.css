@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -85,15 +86,18 @@ span{
     
 }
 
-.button,
+.button{
+    background-color: #8884ff;
+    transition: ease .4s;
+}
 .project-details:hover{
     background-color: #8884ff;
     transition: ease .4s;
 }
 
 .main img{
-    width: 300px;
-    height: 400px;
+    width: 70%;
+    height: 100%;
     margin: 0px 0px 0px 50px;
     border: 7px solid #d7bce8;
 }
@@ -162,8 +166,15 @@ span{
 
 .card_img{
     width: 100%;
-    height: 150px;
-    background-image: url(../img/albrecht-1.png);
+    height: 20%;
+    background-image: url(../img/FP-636x209.png);
+    background-size: cover;
+}
+
+.card_img2{
+    width: 100%;
+    height: 20%;
+    background-image: url(../img/social-media-icon.png);
     background-size: cover;
 }
 
@@ -227,11 +238,11 @@ span{
     margin-top: 0.5em;
 }
 
-.footer .social i{
+.social{
     font-size: 1.2em;
 }
 
-.footer .social a{
+.social{
     text-decoration: none;
     color: black;
 }
